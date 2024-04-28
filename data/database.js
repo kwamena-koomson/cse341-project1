@@ -6,12 +6,12 @@ const { MongoClient } = require('mongodb');
 let database;
 
 const initDb = (callback) => {
-    if (database) {
-      console.log('Db is already initialized!');
-      return callback(null, database);
-    }
-  
-    MongoClient.connect(process.env.MONGODB_URL)
+  if (database) {
+    console.log('Db is already initialized!');
+    return callback(null, database);
+  }
+
+  MongoClient.connect(process.env.MONGODB_URL)
     .then((client) => {
       database = client.db();
       console.log('Db is connected');
@@ -23,16 +23,14 @@ const initDb = (callback) => {
     });
 };
 
-
-
 const getDatabase = () => {
-    if(!database) {
-        throw Error('Database is not initialized')
-    }
-    return database;
+  if (!database) {
+    throw Error('Database not initialized');
+  }
+  return database;
 };
 
 module.exports = {
-    initDb,
-    getDatabase
+  initDb,
+  getDatabase
 };
