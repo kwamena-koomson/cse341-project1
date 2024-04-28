@@ -2,7 +2,7 @@
 
 ### Get all contacts GET http://localhost:4001/contacts
 
-### Get contact by ID GET http://localhost:3000/contacts/662df7a08cd0402da79b8fee
+### Get contact by ID GET http://localhost:4001/contacts/662df7a08cd0402da79b8fee
 
 //Production
 
