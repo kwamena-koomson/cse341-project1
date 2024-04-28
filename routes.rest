@@ -1,0 +1,13 @@
+//Localhost
+
+### Get all contacts GET http://localhost:4001/contacts
+
+### Get contact by ID GET http://localhost:3000/contacts/662df7a08cd0402da79b8fee
+
+//Production
+
+### Get all contacts GET https://cse341-projects-vf7d.onrender.com/contacts
+
+### Get contact by ID GET https://cse341-projects-vf7d.onrender.com/contacts/662df7a08cd0402da79b8fee
+
+
